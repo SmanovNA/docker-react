@@ -6,6 +6,6 @@ before_install:
   - docker build -t nsmanov/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run nsmanov/docker-react npn run test -- --coverage
+  - docker run nsmanov/docker-react npm run test -- --coverage
 
 
